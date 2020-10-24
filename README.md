@@ -11,23 +11,23 @@ A starter template to build lightning fast websites with [Ghost](https://ghost.o
 &nbsp;
 
 
-# Installing
+# Development Set-up
 
 ```bash
-# With Gatsby CLI
-gatsby new gatsby-starter-ghost https://github.com/TryGhost/gatsby-starter-ghost.git
+# Clone the repo
+git clone https://github.com/whensbrunch/david-stevens.git
 ```
 
 ```bash
-# From Source
-git clone https://github.com/TryGhost/gatsby-starter-ghost.git
-cd gatsby-starter-ghost
-```
-
-Then install dependencies
-
-```bash
+# Install dependencies
+cd david-stevens
 yarn
+```
+
+Run development server to test
+
+```bash
+gatsby develop
 ```
 
 &nbsp;
