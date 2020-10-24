@@ -14,6 +14,7 @@ import { MetaData } from '../components/common/meta'
 *
 */
 const Index = ({ data, location, pageContext }) => {
+    console.log(data)
     const posts = data.allGhostPost.edges
 
     return (
@@ -48,8 +49,9 @@ export default Index
 
 // This page query loads all posts sorted descending by published date
 // The `limit` and `skip` values are used for pagination
+// filter: {tags: {elemMatch: {slug: {eq: "books"}}}}
 export const pageQuery = graphql`
-  query GhostPostQuery($limit: Int!, $skip: Int!) {
+    query GhostPostQuery($limit: Int!, $skip: Int!) {
     allGhostPost(
         sort: { order: DESC, fields: [published_at] },
         limit: $limit,
